@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "380439546120",
+    "firebase_url": "https://realtimehotel.firebaseio.com",
+    "project_id": "realtimehotel",
+    "storage_bucket": "realtimehotel.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:380439546120:android:5e3d2880308a3841",
+        "android_client_info": {
+          "package_name": "com.dannextech.apps.hotelsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "380439546120-57lvr45it529c47582kgc0q17lbctvqb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dannextech.apps.hotelsystem",
+            "certificate_hash": "72787c651de8a67f5b2202b7648a1a7c5dfe82fb"
+          }
+        },
+        {
+          "client_id": "380439546120-1fbeml8teslorqsh4bnoii0ugk9lpjm1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFPjAsC7gib531H7NZ-09z6_9TDHfKF4o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "380439546120-1fbeml8teslorqsh4bnoii0ugk9lpjm1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

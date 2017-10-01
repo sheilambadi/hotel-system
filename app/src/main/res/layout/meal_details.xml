@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/ivMealLetter"
+        android:padding="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textSize="20dp"
+        android:id="@+id/tvMealTitle"
+        android:text="Meal one is"
+        android:padding="10dp"
+        android:layout_toRightOf="@+id/ivMealLetter"
+        android:layout_toLeftOf="@+id/etQuantity"/>
+    <EditText
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etQuantity"
+        android:textSize="20dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:layout_toLeftOf="@+id/tvSh"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMealPrice"
+        android:textSize="20dp"
+        android:gravity="center_vertical"
+        android:text="price"
+        android:padding="10dp"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textSize="20dp"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/tvSh"
+        android:text="Sh"
+        android:paddingTop="10dp"
+        android:layout_toStartOf="@id/tvMealPrice"/>
+
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dannextech.apps.hotelsystem.SelectMealFragment">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+     <android.support.v7.widget.Toolbar
+         android:id="@+id/toolbar5"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="?attr/colorPrimary"
+         android:minHeight="?attr/actionBarSize"
+         android:theme="?attr/actionBarTheme">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+           <Button
+               android:id="@+id/btMeals"
+               android:layout_width="93dp"
+               android:layout_height="wrap_content"
+               android:text="Meals"
+               android:textColor="#fff"
+               android:textStyle="bold"
+               android:textSize="20dp"
+               android:padding="10dp"/>
+           <Button
+               android:id="@+id/btDrinks"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Drinks"
+               android:textColor="#fff"
+               android:textStyle="bold"
+               android:textSize="20dp"
+               android:padding="10dp"/>
+           <Button
+               android:id="@+id/btSnacks"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textAlignment="textEnd"
+               android:text="Snacks"
+               android:textColor="#fff"
+               android:textStyle="bold"
+               android:textSize="20dp"
+               android:padding="10dp"/>
+
+        </LinearLayout>
+     </android.support.v7.widget.Toolbar>
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentStart="true"
+         android:id="@+id/rvOrderedMealList"
+         android:layout_below="@+id/toolbar7"
+         android:background="#0ff0ff">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:id="@+id/tv1"
+            android:text="Meals"
+            android:padding="10dp"
+            android:textSize="15dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="60dp"
+            android:layout_toLeftOf="@+id/etQuantity"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv2"
+            android:text="Quantity"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:layout_toLeftOf="@+id/tv3"/>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv3"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:textSize="15dp"
+            android:text="Price"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"/>
+
+     </RelativeLayout>
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:id="@+id/mealList">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/btSubmitMeals"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+     </RelativeLayout>
+  </LinearLayout>
+
+</FrameLayout>

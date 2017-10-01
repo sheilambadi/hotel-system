@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dannextech.apps.hotelsystem.OrderedMealList">
+
+    <RelativeLayout
+        android:layout_width="304dp"
+        android:layout_height="493dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/recyclerView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:text="Ordered Meals"
+                android:textAppearance="@android:style/TextAppearance.Large"/>
+        </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:id="@+id/rvOrderedMealList"
+            android:layout_below="@+id/toolbar7">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:id="@+id/tv1"
+                android:text="Meal"
+                android:padding="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="40dp"
+                android:layout_toLeftOf="@+id/etQuantity"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv2"
+                android:text="Quantity"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:layout_toLeftOf="@+id/tv3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv3"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:text="price"
+                android:padding="10dp"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rvOrderedMealList"
+            android:layout_alignParentStart="true"
+            android:id="@+id/rvPaymentList" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
