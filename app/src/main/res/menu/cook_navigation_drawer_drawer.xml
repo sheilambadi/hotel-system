@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_serve_meal"
+            android:icon="@drawable/waiter"
+            android:title="Serve Meal" />
+        <item
+            android:id="@+id/nav_view_meals_cook"
+            android:icon="@drawable/restaurant"
+            android:title="Ordered Meals" />
+        <item
+            android:id="@+id/nav_available_meals"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Available Meals" />
+    </group>
+
+    <item android:title="Other Tools">
+        <menu>
+            <item
+                android:id="@+id/nav_contact_admin_cook"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Contact Admin" />
+            <item
+                android:id="@+id/nav_help_cook"
+                android:icon="@drawable/settings"
+                android:title="Help" />
+        </menu>
+    </item>
+
+</menu>

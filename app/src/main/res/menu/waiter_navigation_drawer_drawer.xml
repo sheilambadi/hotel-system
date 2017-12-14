@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_make_order"
+            android:icon="@drawable/waiter"
+            android:title="Make Order" />
+        <item
+            android:id="@+id/nav_view_meals"
+            android:icon="@drawable/restaurant"
+            android:title="View Meals" />
+        <item
+            android:id="@+id/nav_cancel_meal"
+            android:icon="@drawable/com_facebook_close"
+            android:title="Cancel Order" />
+    </group>
+
+    <item android:title="Other Tools">
+        <menu>
+            <item
+                android:id="@+id/nav_contact_admin"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Contact Admin" />
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/forgot_password"
+                android:title="Help" />
+            <item
+                android:id="@+id/nav_log_out"
+                android:icon="@drawable/user_male"
+                android:title="Log Out"/>
+        </menu>
+    </item>
+
+</menu>

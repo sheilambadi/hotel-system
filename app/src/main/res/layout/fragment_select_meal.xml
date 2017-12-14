@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.dannextech.apps.hotelsystem.SelectMealFragment">
+    tools:context="com.dannextech.apps.hotelsystem.FinalSystem.WaiterMakeOrder">
 
   <LinearLayout
       android:layout_width="match_parent"
@@ -27,16 +27,19 @@
                android:textColor="#fff"
                android:textStyle="bold"
                android:textSize="20dp"
-               android:padding="10dp"/>
+               android:padding="10dp"
+               android:background="@color/colorPrimary"/>
            <Button
                android:id="@+id/btDrinks"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:text="Drinks"
+               android:background="@color/colorPrimary"
                android:textColor="#fff"
                android:textStyle="bold"
                android:textSize="20dp"
-               android:padding="10dp"/>
+               android:padding="10dp"
+               android:layout_marginLeft="40dp"/>
            <Button
                android:id="@+id/btSnacks"
                android:layout_width="match_parent"
@@ -46,7 +49,8 @@
                android:textColor="#fff"
                android:textStyle="bold"
                android:textSize="20dp"
-               android:padding="10dp"/>
+               android:padding="10dp"
+               android:background="@color/colorPrimary"/>
 
         </LinearLayout>
      </android.support.v7.widget.Toolbar>
@@ -57,7 +61,7 @@
          android:layout_alignParentStart="true"
          android:id="@+id/rvOrderedMealList"
          android:layout_below="@+id/toolbar7"
-         android:background="#0ff0ff">
+         android:background="@color/colorAccent">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

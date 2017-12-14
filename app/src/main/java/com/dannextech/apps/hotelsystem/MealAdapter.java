@@ -14,6 +14,8 @@ import android.widget.Toast;
 
 import com.amulyakhare.textdrawable.TextDrawable;
 import com.amulyakhare.textdrawable.util.ColorGenerator;
+import com.dannextech.apps.hotelsystem.FinalSystem.OrderedMealsDbContract;
+import com.dannextech.apps.hotelsystem.FinalSystem.OrderedMealsDbHelper;
 
 /**
  * Created by amoh on 9/25/2017.
@@ -68,12 +70,12 @@ public class MealAdapter extends RecyclerView.Adapter<MealAdapter.ViewHolder> {
         final TextDrawable drawable = TextDrawable.builder().buildRound(letter,generator.getRandomColor());
         holder.letter.setImageDrawable(drawable);
         //Toast.makeText(context,"Size is "+ position,Toast.LENGTH_LONG).show();
-        final int[] pos = {-1};
+        final int[] clicks = {0};
         holder.mealTitle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                pos[0] = selected[position];
-                if (pos[0] ==-1||pos[0]==100000){
+                clicks[0]++;
+                if (clicks[0] % 2 == 0){
                     holder.letter.setImageDrawable(drawable);
                     selected[position] = 100000;
                     deleteUnSelectedDb(holder.mealTitle.getText().toString());

@@ -26,7 +26,9 @@
         android:textSize="20dp"
         android:gravity="center_vertical"
         android:padding="10dp"
-        android:layout_toLeftOf="@+id/tvSh"/>
+        android:layout_toLeftOf="@+id/tvSh"
+        android:maxLength="1"
+        android:inputType="number" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -48,5 +50,4 @@
         android:text="Sh"
         android:paddingTop="10dp"
         android:layout_toStartOf="@id/tvMealPrice"/>
-
 </RelativeLayout>

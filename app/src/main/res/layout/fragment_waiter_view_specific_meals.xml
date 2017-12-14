@@ -1,0 +1,72 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dannextech.apps.hotelsystem.FinalSystem.CookViewSpecificMeals">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:id="@+id/rlViewOrderedMeals"
+            android:layout_below="@+id/tbViewOrderedMeals"
+            android:background="@color/colorAccent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:id="@+id/tvcol1"
+                android:text="Meals"
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="60dp"/>
+
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvcol3"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:text="Quantity"
+                android:padding="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/rvViewOrderedMealsWaiter"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/rlViewOrderedMeals"/>
+        <Button
+            android:id="@+id/btServeMeals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Serve Meal"
+            android:layout_alignParentBottom="true"/>
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tbViewOrderedMeals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            android:layout_alignParentTop="true">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTableNameTitle"/>
+        </android.support.v7.widget.Toolbar>
+    </RelativeLayout>
+
+</FrameLayout>

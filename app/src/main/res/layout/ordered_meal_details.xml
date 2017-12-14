@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <ImageView
         android:id="@+id/ivOrderedMealDetails"
@@ -14,7 +14,7 @@
         android:layout_alignParentStart="true" />
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_alignParentTop="true"
         android:layout_toEndOf="@+id/ivOrderedMealDetails"
@@ -46,11 +46,19 @@
         <TextView
             android:id="@+id/tvTimeOrdered"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textAlignment="textEnd"
             android:text="Time Ordered"/>
+        <TextView
+            android:id="@+id/tvTotalMealPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textAlignment="textEnd"
+            android:text="Total Amount"/>
     </LinearLayout>
 
 </RelativeLayout>

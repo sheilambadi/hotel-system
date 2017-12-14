@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.dannextech.apps.hotelsystem.MakeOrder"
-    tools:layout_editor_absoluteY="25dp"
-    tools:layout_editor_absoluteX="0dp">
+    tools:context="com.dannextech.apps.hotelsystem.MakeOrder">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -33,6 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/mealsFrag"
-            android:name="com.dannextech.apps.hotelsystem.SelectMealFragment"/>
+            android:name="com.dannextech.apps.hotelsystem.FinalSystem.WaiterMakeOrder"/>
     </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>
