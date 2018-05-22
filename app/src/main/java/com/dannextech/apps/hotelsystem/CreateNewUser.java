@@ -75,7 +75,7 @@ public class CreateNewUser extends AppCompatActivity {
 
     }
 
-    private void inputPassword(final String s) {
+    private void inputPassword(final String email) {
         AlertDialog.Builder builder = new AlertDialog.Builder(new ContextThemeWrapper(this,R.style.myDialog));
         builder.setTitle("Verification Details");
 
@@ -89,7 +89,7 @@ public class CreateNewUser extends AppCompatActivity {
                 if (etPassword.getText().toString().isEmpty()){
                     Toast.makeText(getApplicationContext(),"Please enter a password",Toast.LENGTH_SHORT).show();
                 }else {
-                    createAccount(s,etPassword.getText().toString());
+                    createAccount(email,etPassword.getText().toString());
                 }
             }
         });

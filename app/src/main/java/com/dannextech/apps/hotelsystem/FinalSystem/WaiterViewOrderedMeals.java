@@ -7,7 +7,6 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -34,7 +33,7 @@ public class WaiterViewOrderedMeals extends Fragment {
 
     public DatabaseReference mReference,itemRef;
 
-    List<Listdetails> myList;
+    List<MealInfoModel> myList;
     FirebaseRecyclerAdapter<OrderedMealListModel,WaiterViewOrderedViewHolder> firebaseRecyclerAdapter;
 
     public WaiterViewOrderedMeals() {

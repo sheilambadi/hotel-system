@@ -19,7 +19,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Welcome to work today my friend"
+                android:text="Welcome to work today Cook Zack"
                 android:textColor="#fff"
                 android:textSize="40dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"

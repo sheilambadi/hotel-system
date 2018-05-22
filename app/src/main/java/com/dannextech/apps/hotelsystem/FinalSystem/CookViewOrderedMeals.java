@@ -21,7 +21,6 @@ import com.dannextech.apps.hotelsystem.R;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.Query;
 
 import java.util.List;
 
@@ -35,7 +34,7 @@ public class CookViewOrderedMeals extends Fragment {
 
     public DatabaseReference mReference,itemRef;
 
-    List<Listdetails> myList;
+    List<MealInfoModel> myList;
     FirebaseRecyclerAdapter<OrderedMealListModel,WaiterViewOrderedViewHolder> firebaseRecyclerAdapter;
 
     public CookViewOrderedMeals() {

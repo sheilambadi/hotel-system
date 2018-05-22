@@ -4,10 +4,10 @@ package com.dannextech.apps.hotelsystem.FinalSystem;
  * Created by amoh on 10/8/2017.
  */
 
-public class Listdetails {
+public class MealInfoModel {
     private String tableName,timeOrdered,paymentStatus,serviceStatus,totalPrice;
 
-    public Listdetails(){
+    public MealInfoModel(){
 
     }
 

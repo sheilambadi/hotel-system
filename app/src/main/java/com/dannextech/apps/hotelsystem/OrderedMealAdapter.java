@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.dannextech.apps.hotelsystem.FinalSystem.Listdetails;
+import com.dannextech.apps.hotelsystem.FinalSystem.MealInfoModel;
 
 import java.util.List;
 
@@ -15,9 +15,9 @@ import java.util.List;
  */
 
 public class OrderedMealAdapter extends RecyclerView.Adapter<OrderedMealAdapter.ViewHolder> {
-    List<Listdetails> listdata;
+    List<MealInfoModel> listdata;
 
-    public OrderedMealAdapter(List<Listdetails> listdata) {
+    public OrderedMealAdapter(List<MealInfoModel> listdata) {
         this.listdata = listdata;
     }
 
@@ -30,7 +30,7 @@ public class OrderedMealAdapter extends RecyclerView.Adapter<OrderedMealAdapter.
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        Listdetails data = listdata.get(position);
+        MealInfoModel data = listdata.get(position);
         holder.tvTableName.setText(data.getTableName());
         holder.tvTimeOrdered.setText(data.getTimeOrdered());
         holder.tvServedStatus.setText(data.getServiceStatus());

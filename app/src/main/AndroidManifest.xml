@@ -14,8 +14,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginForm"></activity>
-        <activity android:name=".CreateNewUser" />
+        <activity android:name=".LoginForm">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CreateNewUser" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".SignInForm" />
         <activity android:name=".PaymentList" />
         <activity android:name=".OrderedMealList"></activity>
@@ -33,7 +45,13 @@
         <activity
             android:name=".FinalSystem.CookNavigationDrawer"
             android:label="@string/title_activity_cook_navigation_drawer"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".MakeOrder"></activity>
     </application>
 

@@ -11,7 +11,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+//import com.bumptech.glide.Glide;
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.dannextech.apps.hotelsystem.R;
 
 /**
@@ -41,9 +43,9 @@ public class WaiterHome extends Fragment {
         cvSnackImage = view.findViewById(R.id.cvSnacksImage);
         tvWelcomeWaiter = view.findViewById(R.id.tvWelcomeWaiter);
 
-        Glide.with(getContext()).load(R.drawable.download).override(150,120).into(ivMealImage);
-        Glide.with(getContext()).load(R.drawable.download2).override(150,120).into(ivDrinkImage);
-        Glide.with(getContext()).load(R.drawable.download3).override(150,120).into(ivSnackImage);
+        Glide.with(getContext()).load(R.drawable.download).apply(new RequestOptions().override(150,120)).into(ivMealImage);
+        Glide.with(getContext()).load(R.drawable.download2).apply(new RequestOptions().override(150,120)).into(ivDrinkImage);
+        Glide.with(getContext()).load(R.drawable.download3).apply(new RequestOptions().override(150,120)).into(ivSnackImage);
 
         cvMealImage.setOnClickListener(new View.OnClickListener() {
             @Override

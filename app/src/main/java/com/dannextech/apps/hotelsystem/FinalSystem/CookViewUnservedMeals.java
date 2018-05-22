@@ -35,7 +35,7 @@ public class CookViewUnservedMeals extends Fragment {
 
     public DatabaseReference mReference,itemRef;
 
-    List<Listdetails> myList;
+    List<MealInfoModel> myList;
     FirebaseRecyclerAdapter<OrderedMealListModel,WaiterViewOrderedViewHolder> firebaseRecyclerAdapter;
 
 

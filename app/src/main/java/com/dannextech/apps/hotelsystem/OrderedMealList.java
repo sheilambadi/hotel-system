@@ -8,7 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
-import com.dannextech.apps.hotelsystem.FinalSystem.Listdetails;
+import com.dannextech.apps.hotelsystem.FinalSystem.MealInfoModel;
 import com.dannextech.apps.hotelsystem.FinalSystem.OrderedMealListModel;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.database.DatabaseReference;
@@ -21,7 +21,7 @@ public class OrderedMealList extends AppCompatActivity {
 
     public DatabaseReference mReference,itemRef;
 
-    List<Listdetails> myList;
+    List<MealInfoModel> myList;
     FirebaseRecyclerAdapter<OrderedMealListModel,OrderedMealListViewHolder> firebaseRecyclerAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
